@@ -175,7 +175,6 @@ function createPublicationElement(publication) {
   }
   
   // Assemble the publication item
-  pubItem.appendChild(thumbnail);
   pubItem.appendChild(content);
   
   return pubItem;

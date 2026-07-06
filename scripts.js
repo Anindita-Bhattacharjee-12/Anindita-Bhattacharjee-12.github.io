@@ -6,6 +6,7 @@ let showingSelected = true;
 document.addEventListener('DOMContentLoaded', function() {
   // Load publications data
   loadPublications();
+  loadProjects();
   
   // Initialize animation delays for sections
   const sections = document.querySelectorAll('section');
@@ -174,7 +175,48 @@ function createPublicationElement(publication) {
   
   return pubItem;
 }
+// Load projects from JSON file
+function loadProjects() {
+  fetch('Project.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Projects loaded successfully:", data);
+      renderProjects(data.projects);
+    })
+    .catch(error => {
+      console.error('Error loading projects:', error);
+    });
+}
+function renderProjects(Project) {
+  const container = document.getElementById('projects-container');
 
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  projects.forEach(project => {
+    const projectDiv = document.createElement('div');
+    projectDiv.className = 'project-item';
+
+    projectDiv.innerHTML = `
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <p><strong>Tags:</strong> ${project.tags.join(', ')}</p>
+      <p>
+        <a href="${project.github}" target="_blank">
+          GitHub Repository
+        </a>
+      </p>
+    `;
+
+    container.appendChild(projectDiv);
+  });
+}
 // Modal functionality for viewing original images
 function openModal(imageSrc) {
   const modal = document.getElementById('imageModal');

@@ -3,9 +3,15 @@ let allPublications = [];
 let showingSelected = true;
 
 // Initialize the page
-document.addEventListener('DOMContentLoaded', function() {
-  loadPublications();
-  loadProjects();
+document.addEventListener('DOMContentLoaded', function () {
+
+  if (document.getElementById('publications-container')) {
+    loadPublications();
+  }
+
+  if (document.getElementById('projects-container')) {
+    loadProjects();
+  }
 
   const sections = document.querySelectorAll('section');
   sections.forEach((section, index) => {
@@ -17,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', togglePublications);
   }
 });
-
 // Load publications from JSON file
 function loadPublications() {
   fetch('publications.json')
@@ -78,14 +83,17 @@ function createPublicationElement(publication) {
   pubItem.className = 'publication-item';
   
   // Create thumbnail
+  if (publication.thumbnail) {
   const thumbnail = document.createElement('div');
   thumbnail.className = 'pub-thumbnail';
-  thumbnail.onclick = () => openModal(publication.thumbnail);
-  
+
   const thumbnailImg = document.createElement('img');
   thumbnailImg.src = publication.thumbnail;
   thumbnailImg.alt = `${publication.title} thumbnail`;
+
   thumbnail.appendChild(thumbnailImg);
+  pubItem.appendChild(thumbnail);
+}
   
   // Create content container
   const content = document.createElement('div');

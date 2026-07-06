@@ -4,17 +4,14 @@ let showingSelected = true;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-  // Load publications data
   loadPublications();
   loadProjects();
-  
-  // Initialize animation delays for sections
+
   const sections = document.querySelectorAll('section');
   sections.forEach((section, index) => {
     section.style.animationDelay = `${index * 0.1}s`;
   });
-  
-  // Add event listener for toggle button
+
   const toggleButton = document.getElementById('toggle-publications');
   if (toggleButton) {
     toggleButton.addEventListener('click', togglePublications);
@@ -177,7 +174,7 @@ function createPublicationElement(publication) {
 }
 // Load projects from JSON file
 function loadProjects() {
-  fetch('Project.json')
+  fetch('Project.json') // Keep this because your file is named Project.json
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
@@ -192,7 +189,9 @@ function loadProjects() {
       console.error('Error loading projects:', error);
     });
 }
-function renderProjects(Project) {
+
+// Render projects
+function renderProjects(projects) {
   const container = document.getElementById('projects-container');
 
   if (!container) return;

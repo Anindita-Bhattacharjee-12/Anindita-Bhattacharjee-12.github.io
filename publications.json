@@ -1,13 +1,17 @@
 {
-  "title": "SpatioTrace: An Interpretable Framework for Copy-Recall Divergence Analysis in ROCF Drawings",
-  "authors": [
-    "Anindita Bhattacharjee*",
-    "Sultanul Arifeen Hamim",
-    "M. F. Mridha",
-    "Md. Jakir Hossen"
-  ],
-  "venue": "Manuscript prepared in IEEE TNSRE format, ready for submission.",
-  "thumbnail": "images/paper.png",
-  "selected": 1,
-  "links": {}
+  "publications": [
+    {
+      "title": "SpatioTrace: An Interpretable Framework for Copy-Recall Divergence Analysis in ROCF Drawings",
+      "authors": [
+        "Anindita Bhattacharjee*",
+        "Sultanul Arifeen Hamim",
+        "M. F. Mridha",
+        "Md. Jakir Hossen"
+      ],
+      "venue": "Manuscript prepared in IEEE TNSRE format, ready for submission.",
+      "thumbnail": "images/paper.png",
+      "selected": 1,
+      "links": {}
+    }
+  ]
 }

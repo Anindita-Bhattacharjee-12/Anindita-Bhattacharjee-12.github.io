@@ -7,13 +7,33 @@
       "tags": ["Deep Learning", "GAN", "Computer Vision", "Agriculture", "Image Classification"]
     },
     {
+      "title": "AI Human Deception Game",
+      "description": "A browser-based research prototype studying whether people can detect deception from a human or an AI in a safety-critical decision task.",
+      "github": "https://github.com/Anindita-Bhattacharjee-12/AI-Deception-Game.git",
+      "tags": ["HTML", "CSS", "JavaScript", "Autonomous Car"]
+    },
+    {
+      "title": "AI Reasoning",
+      "description": "When AI justify a house-price estimation, a critique style harder to detect to fact-check or a direct recommendation, even when both are equally wrong, in reliable and unreliable situation.",
+      "github": "https://github.com/Anindita-Bhattacharjee-12/AI-Reasoning.git",
+      "tags": ["llama3.2", "gemma", "mistral","RandomForest", "SHAP"]
+    },
+
+     {
+      "title": "MindEase - RAG-Based Mental Wellness Support Assistant",
+      "description": "A Streamlit app that retrieves evidence-informed coping strategies from a curated knowledge base and uses an open-source LLM (via the Hugging Face Inference API) to turn them into a warm, personalized suggestion, not a diagnosis.",
+      "github": "https://github.com/Anindita-Bhattacharjee-12/MindEase.git",
+      "tags": ["Mental Health", "Streamlit","RAG","all-MiniLM-L6-v2"]
+    },
+    
+    {
       "title": "A Comparative Study of Machine Learning and Deep Learning for Brain Tumor Detection",
       "description": "A comparative study evaluating machine learning and deep learning approaches for brain tumor detection and classification from MRI images using feature extraction and convolutional neural networks.",
       "github": "https://github.com/Anindita-Bhattacharjee-12/A-Comparative-Study-of-Machine-Learning-and-Deep-Learning-for-Brain-Tumor-Detection",
       "tags": ["Machine Learning", "Deep Learning", "Medical Imaging", "Computer Vision", "Brain Tumor Detection"]
     },
     {
-      "title": "Mapping Symptom Propagation Pathways of Anxiety, Stress and Depression Using Network and Causal Discovery Methods",
+      "title": "Mapping Symptom Propagation Pathways of Anxiety, Stress and Depression Using Network and Causal Discovery Methods across Bangladeshi Private Students",
       "description": "A mental health research project that explores symptom interactions and propagation pathways of anxiety, stress, and depression using network analysis and causal discovery techniques.",
       "github": "https://github.com/Anindita-Bhattacharjee-12/AcademicMindPath-BangladeshPrivateStudent",
       "tags": ["Mental Health", "Network Analysis", "Causal Discovery", "Machine Learning"]
